@@ -2,7 +2,9 @@
     margin: 0;
     box-sizing: border-box;
     display: flex;
+    flex-flow: row;
     height: 100%;
+    width: auto;
     align-items: center;
 }
 
@@ -22,5 +24,33 @@
     background-color: #8f5c2c;
     border-bottom: 4px solid #40a4c8;
     color: #fff;
+}
+
+/* media queries */
+@media (max-width:500px){
+    .NavigationItem{
+        margin: 10px 0;
+        flex-flow: column;
+        display: block;
+        width: 100%;
+    }
+    
+    .NavigationItem a{
+        color: #8f5c2c;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        border-bottom: none;
+    }
+    
+    .NavigationItem a:hover,
+    .NavigationItem a:active,
+    .NavigationItem a.active{
+        color:#40a4c8;
+        border-bottom: none;
+        background: none;
+
+    }
+    
 }
 
