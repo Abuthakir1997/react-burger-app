@@ -20,7 +20,7 @@ const orderSummary = (props) => {
             </ul>
             <p style={{ marginTop: '20px' }}>A delicious burger with the following ingredients</p>
             <p style={{ marginTop: "10px" }}><strong>Total price : {props.price.toFixed(2)}</strong></p>
-            <Button btnType="Danger" clicked={props.purchaseCancelled}>Cancel</Button>
+            <Button btnType="Danger" show={props.show} clicked={props.purchaseCancelled}>Cancel</Button>
             <Button btnType="Success" clicked={props.purchaseContinued}>Continue</Button>
 
         </Auxx>

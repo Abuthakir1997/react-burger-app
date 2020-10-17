@@ -1,3 +1,4 @@
+
 .BreadBottom {
     height: 13%;
     width: 80%;
@@ -82,32 +83,68 @@
   
 
 .Meat {
-    width: 80%;
-    height: 8%;
+  position: relative;
+    width: 300px;
+    height: 25px;
+    left: 0;
     background: linear-gradient(#7f3608, #702e05);
     margin: 2% auto;
     border-radius: 15px;
+    animation: animate-right 1s;
 }
 
 .Cheese {
-    width: 90%;
-    height: 4.5%;
+    position: relative;
+    width: 250px;
+    height: 25px;
+    left: 0;
     margin: 2% auto;
     background: linear-gradient(#f4d004, #d6bb22);
-    border-radius: 20px;
+    border-radius: 50px;
+    animation: animate-left 1s;
 }
 
 .Salad {
-    width: 85%;
-    height: 7%;
-    margin: 2% auto;
+    position: relative;
+    width: 350px;
+    height: 25px;
+    left: 0;
     background: linear-gradient(#228c1d, #91ce50);
     border-radius: 20px;
+    animation: animate-left 1s ;
 }
 
 .Bacon {
-    width: 80%;
-    height: 3%;
+  position: relative;
+    width: 300px;
+    height: 8px;
+    left: 0;
     background: linear-gradient(#bf3813, #c45e38);
     margin: 2% auto;
+    animation: animate-right 1s;
 }
+
+
+@keyframes animate-left{
+  0%{
+    left: -500px;
+  }
+  50%{
+    left: 0px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+@keyframes animate-right{
+  0%{
+    left: 500px;
+  }
+  50%{
+    left: 0px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+

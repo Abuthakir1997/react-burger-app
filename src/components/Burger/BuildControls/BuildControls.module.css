@@ -8,8 +8,14 @@
     margin: auto;
     padding: 10px 0;
 }
-
-
+.Price{
+    display: flex;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.Price p{
+    margin: 0 10px;
+}
 .OrderButton {
     background-color: #DAD735;
     outline: none;
@@ -38,6 +44,18 @@
 .OrderButton:not(:disabled) {
     animation: enable 0.3s linear;
 }
+
+/* media queries */
+
+@media (max-width:575px){
+    .Price{
+        flex-direction: column;
+    }
+    .Price p{
+        margin-top: 10px;
+    }
+}
+
 
 @keyframes enable {
     0% {
