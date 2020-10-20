@@ -109,6 +109,7 @@
     width: 350px;
     height: 25px;
     left: 0;
+    margin: 0 auto;
     background: linear-gradient(#228c1d, #91ce50);
     border-radius: 20px;
     animation: animate-left 1s ;
@@ -148,3 +149,9 @@
   }
 }
 
+/* media queries */
+
+
+@media (max-width:575px){
+
+}
